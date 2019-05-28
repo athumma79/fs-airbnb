@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-register',
+  templateUrl: './register.page.html',
+  styleUrls: ['./register.page.scss'],
 })
-export class HomePage {
+export class RegisterPage implements OnInit {
 
   showHide() {
     var x = document.getElementById("password");
@@ -17,9 +17,13 @@ export class HomePage {
     }
   }
 
-  login() {
-    this.navCtrl.navigateForward("explore");
+  register() {
+    this.navCtrl.navigateForward("home");
   }
 
   constructor(private navCtrl: NavController) {}
+
+  ngOnInit() {
+  }
+
 }

@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Trips</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="ion-padding">
+      <p class="center"><b>No upcoming trips</b></p>
+      <p class="center">Start exploring ideas for your next trip</p>
+      <div class="center">
+          <ion-button (click)="explore()">Explore Airbnb</ion-button>
+      </div>
+      <h3 class="center">Current Trip</h3>
+      <ion-list>
+        <div class="center">
+          <ion-button (click)="details()">
+            <ion-item>
+              <ion-label>
+                Libson, Portugal
+              </ion-label>
+            </ion-item>
+          </ion-button>
+        </div>
+      </ion-list>
+      <ion-list>         
+        <ion-item><a href="explore">Explore</a></ion-item>
+        <ion-item><a href="saved">Saved</a></ion-item>
+        <ion-item><a href="trips">Trips</a></ion-item>
+        <ion-item><a href="inbox">Inbox</a></ion-item>
+        <ion-item><a href="profile">Profile</a></ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+  
